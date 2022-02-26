@@ -1,0 +1,5 @@
+• Mobile first design is indeed easier to implement to a desktop than the other way around. The video author seems to ramble on and on about topics he discussed already.
+
+• Not really seeing anything new with the JavaScript readings, but maybe that's because I already know OOB and used it for my JavaScript plenty of times already.
+
+• Modularity is useful not just for group work, but also for integrating old code into newer projects. Making my projects modular has saved future effort time and time again (it also made my work more legible).

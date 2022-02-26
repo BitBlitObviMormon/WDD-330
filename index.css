@@ -1,0 +1,96 @@
+/* Make all text a slightly darker, bluer white that's not as */
+/* hard on the eyes and make the background color a deep blue */
+body {
+	font-size:24px;
+	color: #d0e0f0;
+	background-color: #0b007a;
+}
+
+/* Align, resize, and color each tab header */
+h2, lh {
+	margin-top: 0px;
+	padding-top: 16px;
+	padding-left: 16px;
+	font-size: 48px;
+	font-family: "Times New Roman";
+	height: 24px;
+	color: #40ff80;
+}
+
+/* Set the color of all errors to red */
+.error {
+	color: #ff4040 !important;
+}
+
+/* Set the color of all highlights to yellow */
+.highlight {
+	color: yellow !important;
+}
+
+/* Align and resize the selected tab body */
+p {
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 16px;
+	font-size: 24px;
+	font-family: "Arial";
+}
+
+/* Make all titles float in the center, taking up at most 320 pixels of the screen's height */
+#title {
+	text-align: center;
+	margin-top: -2%;
+	margin-bottom: 16px;
+	max-height: 320px;
+}
+
+/* Make the title image scale to the width of the screen */
+#title img {
+	display: block;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+img {
+  float: right;
+  padding: 5px;
+  margin: 0px;
+}
+
+/* Change the color of hyperlinks to green */
+a:link {
+	color: lime;
+}
+
+/* Change the color of visited links to magenta */
+a:visited {
+	color: magenta;
+}
+
+/* Change the style of lists */
+ul.list {
+	list-style-type: none;
+	text-indent: -16px;
+	margin-top: -44px;
+	font-size: 24px;
+	font-family: "Calibri";
+}
+
+/* Set the width and color of each tab's block */
+.tab {
+	margin-left: 96px;
+	margin-right: 96px;
+	padding-right: 16px;
+	background-color: #003673;
+}
+
+ul, ol {
+  justify-content: center;
+  display: table;
+  margin: 0 auto;
+}
+
+li { margin: 8px 0px; }
+.tab { margin: 0 auto; }
+.deprecated { text-decoration: line-through; }

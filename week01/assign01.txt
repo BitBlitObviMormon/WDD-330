@@ -1,0 +1,9 @@
+• I would like to see a sample submission or otherwise know what is expected to be present in the notes. I typically learn more from hands-on experience than from notetaking so I don't typically have any "notes" per se. Commiting the entirety of a codebase to memory or writing it all via notetaking is hogwash in the typical workplace that has public internet access. When I go to work I usually have two screens open: my code, and a reference lookup site (like w3schools or cppreference).
+
+• Ew, Slack. Nope, sorry. Discord or Teams is better. My work preferred to use Microsoft Teams for communication, but I prefer to use Discord whenever I'm coordinating projects at home or at school. Slack feels like it tries to be more formal than Discord, but cheaply imitates it anyway. It's too casual for work (Teams would be the formal option here), but struggles to be what Discord already is.
+
+• I don't see the purpose in using Trello when a quite similar project tracking system is set up on GitHub. We already need a GitHub account (or alternative like BitBucket) in this class so why not use GitHub for project management too? You can even link project milestones with the issues board or reference specific lines of code more easily.
+
+• Honestly, after looking at the list of workflow tasks, I'm surprised that nobody has thought to use Make or CMake to automate them all. Even just a batch or shell script could be handy, does it have to get complicated?
+
+• That is one lengthy course on git. I've already been using git for almost a decade though. When I search the web for answers to questions about git it's more questions like "How do I merge the histories of two repositories together?", or "How do I remove this huge, no longer present file from a repository's history?", or things like that.
