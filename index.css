@@ -39,7 +39,7 @@ p {
 /* Make all titles float in the center, taking up at most 320 pixels of the screen's height */
 #title {
 	text-align: center;
-	margin-top: -2%;
+	margin-top: -1%;
 	margin-bottom: 16px;
 	max-height: 320px;
 }
