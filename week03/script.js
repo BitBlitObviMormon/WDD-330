@@ -49,6 +49,25 @@ function updateLoads() {
 	return loads + 1;
 }
 
+/* An annoying function that makes a few popups */
+function gimmePopup() {
+	let response = ""
+
+	alert("Do you like popups? You DO?? Well, then I guess you're going to love this...");
+	if (confirm("Prepare for the ULTIMATE popup...") == true) {
+		response = "Hmm, you said \"" + prompt("What do you think of THIS?!", "I LOVE IT!!!") + "\"; I agree!"
+	} else {
+		response = prompt("You CANCELED! Please type here, explaining why you canceled.", "Your app sucks!")
+		if (response == "" || response == null) {
+			response = "Ohoho! Looks like somebody may have a popup blocker."
+		} else {
+			response = "\"" + response + "\" Hmph! If you say so."
+		}
+	}
+	
+	document.getElementById("popup-response").innerHTML = response;
+}
+
 /* Functions that are run after the page has finished loading */
 function init() {
 	// Detect browser info
@@ -57,9 +76,9 @@ function init() {
 	// Determine how many times the page was loaded this session
 	let loads = updateLoads();
 	if (loads == 1) {
-		document.getElementById("page-loads").innerHTML = 'You loaded this page ' + loads + ' time this session.';
+		document.getElementById("page-loads").innerHTML = 'You loaded this page ' + loads + ' time this session. (Notice how it only works on a server; if you run this file locally, it will not work!)';
 	} else {
-		document.getElementById("page-loads").innerHTML = 'You loaded this page ' + loads + ' times this session.';
+		document.getElementById("page-loads").innerHTML = 'You loaded this page ' + loads + ' times this session. (Notice how it only works on a server; if you run this file locally, it will not work!)';
 	}
 }
 

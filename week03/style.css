@@ -33,4 +33,5 @@ div.tab {
 
 .button:hover {
 	background-image: url("img/GraySquareButton.png");
+	cursor: pointer;
 }

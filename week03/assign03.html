@@ -17,14 +17,17 @@
 
   <body>
     <!-- The title -->
-    <h2 id="title">Notes #03</h2><br>
+    <h2 id="title">Notes #03 (<a href="script.js">script here</a>)</h2><br>
 	
 	<!-- The body -->
 	<div class="tab">
 		<p id="browser-header">Guess my script died. Sorry, no telling what broswer you're using!</p><br>
 		<p>Press this button to <span class="error">destroy everything</span>! &lt;Insert evil laughter here&gt;</p>
 		<a class="button" id="boom-button" onclick="destroyPage()">document.write()</a><br><br>
-		<p id="page-loads">Guess my script died. Sorry, no telling how many times you loaded this page this session!</p>
+		<p id="page-loads">Guess my script died. Sorry, no telling how many times you loaded this page this session!</p><br>
+		<p>Feeling in love with popups? Well, you're in luck! You can get your very own <span class="highlight">popup</span> today!</p>
+		<a class="button" id="popup" onclick="gimmePopup()">Show me!</a><br><br>
+		<p id="popup-response"></p>
 	</div>
   </body>
 </html>
