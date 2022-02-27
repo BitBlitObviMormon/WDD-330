@@ -1,0 +1,36 @@
+h3 {
+	margin: 0 0 0 16px;
+}
+
+p {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	font-size: 20px;
+}
+
+div.tab {
+	padding: 12px 12px 0 12px;
+}
+
+/* This makes a link become a button */
+.button {
+	/* Image properties */
+	display: inline-block;
+	background-image: url("img/BlueSquareButton.png");
+	background-repeat: no-repeat;
+	background-size: 100% 42px;
+	padding: 10px 12px;
+
+	/* Text properties */
+	color: purple;
+	text-decoration: none;
+	left: 0px;
+	height: 24px;
+	width: auto;
+	text-align: center;
+	font-family: "Times New Roman";
+}
+
+.button:hover {
+	background-image: url("img/GraySquareButton.png");
+}
