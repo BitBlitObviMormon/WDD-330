@@ -32,6 +32,13 @@ div.tab {
 	cursor: pointer;
 }
 
+.pre {
+    display: inline;
+    unicode-bidi: embed;
+    font-family: monospace;
+    white-space: pre;
+}
+
 /* A page break (takes up an entire screen) */
 br.page-break {
 	display: block;		/* makes it have a width */

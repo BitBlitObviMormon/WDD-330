@@ -1,2 +1,11 @@
 @import "../index.css";
 @import "../week03/style.css";
+
+.bold {
+	font-weight: bold;
+	color: yellow;
+}
+
+h2 {
+	padding-left: 0;
+}

@@ -11,16 +11,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- The Javascript file -->
-	<script src="script.js"></script>
+	<script src="https://bitblitobvimormon.github.io/searchable-standard-works/scripts/refLookup.js"></script>
   </head>
 
   <body>
     <!-- The title -->
-    <h2 id="title">Notes #05 (<a href="script.js">script here</a>)</h2><br>
+    <h2 id="title">Notes #05 (<a href="https://bitblitobvimormon.github.io/searchable-standard-works/scripts/refLookup.js">script here</a>)</h2><br>
 	
 	<!-- The body -->
 	<div class="tab">
-		
+		<p>&bull; Ooo, <span class="highlight">AJAX</span>! I used AJAX a lot for other projects, the most memorable one being an <a href="https://github.com/BitBlitObviMormon/searchable-standard-works">indexable standard work API</a> (along with some client code that used it). I used the newly made API to create a <a href="https://bitblitobvimormon.github.io/searchable-standard-works/reference_lookup">speedy reference lookup</a> for scripture chases.</p><br>
+		<p>&bull; It makes sense that AJAX can also send information, but I'm curious as to how those information requests are handled on the serverside end. If it's just JSON then it could probably be processed easily enough with Java, C#, or Python, but can Javascript be used to handle these requests as well?</p><br>
+		<p>&bull; I didn't know about the <span class="pre">FormData()</span> function for AJAX. That's quite handy!</p><br>
+		<p>&bull; Below is an example that uses AJAX and a scripture API. Type shorthand scripture references into it! (Like <span class="pre">hel512</span>, <span class="pre">dc42</span>, <span class="pre">isa5920</span>, or <span class="pre">j11</span>)</p><br>
+		<h2>Indexable scripture reference lookup</h2>
+		<label for="searchbar">Type a scripture reference: </label>
+		<input id="searchbar" name="searchbar" type="text" placeholder="3ne123" oninput="parseInput()" disabled><br><br>
+		<div id="content">Wait for a moment, loading...</div>
 	</div>
 
 	<!-- Add some scroll-space here -->
