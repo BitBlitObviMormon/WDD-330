@@ -44,20 +44,6 @@ p {
 	max-height: 320px;
 }
 
-/* Make the title image scale to the width of the screen */
-#title img {
-	display: block;
-	max-width: 100%;
-	width: auto;
-	height: auto;
-}
-
-img {
-  float: right;
-  padding: 5px;
-  margin: 0px;
-}
-
 /* Change the color of hyperlinks to green */
 a:link {
 	color: lime;

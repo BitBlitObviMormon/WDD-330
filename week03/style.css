@@ -1,7 +1,3 @@
-h3 {
-	margin: 0 0 0 16px;
-}
-
 p {
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
@@ -9,7 +5,7 @@ p {
 }
 
 div.tab {
-	padding: 12px 12px 0 12px;
+	padding: 16px 16px 16px 16px;
 }
 
 /* This makes a link become a button */
@@ -34,4 +30,18 @@ div.tab {
 .button:hover {
 	background-image: url("img/GraySquareButton.png");
 	cursor: pointer;
+}
+
+/* A page break (takes up an entire screen) */
+br.page-break {
+	display: block;		/* makes it have a width */
+	content: "";		/* clears default height */
+	margin-top: 100vh;	/* changes the height */
+}
+
+/* Half of a page break (takes up half of the screen */
+br.half-break {
+	display: block;		/* makes it have a width */
+	content: "";		/* clears default height */
+	margin-top: 50vh;	/* changes the height */
 }
