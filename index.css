@@ -19,12 +19,12 @@ h2, lh {
 
 /* Set the color of all errors to red */
 .error {
-	color: #ff4040 !important;
+	color: #ff4040;
 }
 
 /* Set the color of all highlights to yellow */
 .highlight {
-	color: yellow !important;
+	color: yellow;
 }
 
 /* Align and resize the selected tab body */

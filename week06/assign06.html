@@ -11,16 +11,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- The Javascript file -->
+	<script src="items.js"></script>
 	<script src="script.js"></script>
   </head>
 
-  <body>
+  <body onload="loadItems()">
     <!-- The title -->
-    <h2 id="title">Notes #06 (<a href="script.js">script here</a>)</h2><br>
+    <h2 id="title">Notes #06 (<a href="script.js">script here</a>, <a href="items.json">JSON here</a>)</h2><br>
 	
 	<!-- The body -->
 	<div class="tab">
-		
+	  <p>&bull; Here is an example that implements nearly all of the learning material for this reading assignment (refresh the page to get new shopping options!):</p><br>
+	  <h1>Shoppy Shopper!</h1>	
+	  <form id="credit_form" name="credit_form" onreset="finishReset()" action="sorry.html" method="post">
+		<label for="first_name">First Name:</label>
+		<input id="first_name" name="first_name" type="text" onblur="parse(&quot;first_name&quot;)" autofocus>
+		<span id="first_name_error" class="error invisible"></span><br>
+		<label for="last_name">Last Name:</label>
+		<input id="last_name" name="last_name" type="text" onblur="parse(&quot;last_name&quot;)">
+		<span id="last_name_error" class="error invisible"></span><br>
+		<label for="address">Address:</label>
+		<textarea id="address" name="address" rows="4" cols="50" onblur="parse(&quot;address&quot;)"></textarea>
+		<span id="address_error" class="error invisible"></span><br>
+		<label for="phone">Phone #:</label>
+		<input id="phone" name="phone" type="text" oninput="managePhoneInput()" onblur="parse(&quot;phone&quot;)">
+		<span id="phone_error" class="error invisible"></span><br><br>
+		<p id="item_list_description">Today these items are on sale: <span id="item_list_error" class="error invisible"></span></p>
+		<ul id="item_list">
+		  <li><input type="checkbox" id="item_0" name="item[]" onchange="tallyTotal()"><label id="item_label_0" for="item_0"></label></li>
+		  <li><input type="checkbox" id="item_1" name="item[]" onchange="tallyTotal()"><label id="item_label_1" for="item_1"></label></li>
+		  <li><input type="checkbox" id="item_2" name="item[]" onchange="tallyTotal()"><label id="item_label_2" for="item_2"></label></li>
+		  <li><input type="checkbox" id="item_3" name="item[]" onchange="tallyTotal()"><label id="item_label_3" for="item_3"></label></li>
+		  <li><input type="checkbox" id="item_4" name="item[]" onchange="tallyTotal()"><label id="item_label_4" for="item_4"></label></li>
+		  <li><input type="checkbox" id="item_5" name="item[]" onchange="tallyTotal()"><label id="item_label_5" for="item_5"></label></li>
+		  <li><input type="checkbox" id="item_6" name="item[]" onchange="tallyTotal()"><label id="item_label_6" for="item_6"></label></li>
+		  <li><input type="checkbox" id="item_7" name="item[]" onchange="tallyTotal()"><label id="item_label_7" for="item_7"></label></li>
+		</ul>
+		<p id="total_label">Your total is: <span id="total" class="important">$0.00</span></p><br>
+		<p id="credit_card_description">Credit card: <span id="credit_card_list_error" class="error invisible"></span></p>
+		<ul id="credit_card_list">
+		  <li><input type="radio" id="card_0" name="card" value="Visa"><label for="card_0">Visa</label></li>
+		  <li><input type="radio" id="card_1" name="card" value="Mastercard"><label for="card_1">Mastercard</label></li>
+		  <li><input type="radio" id="card_2" name="card" value="American Express"><label for="card_2">American Express</label></li>
+		</ul>
+		<label for="credit_card">Credit Card #:</label>
+		<input id="credit_card" name="credit_card" type="text" oninput="manageCreditInput()" onblur="parse(&quot;credit_card&quot;)">
+		<span id="credit_card_error" class="error invisible"></span><br>
+		<label for="exp_date">Credit Card Expiration Date:</label>
+		<input id="exp_date" name="exp_date" type="month" onblur="parse(&quot;exp_date&quot;)">
+		<span id="exp_date_error" class="error invisible"></span><br>
+		<button id="submitBtn" type="button" onclick="submitPayment()">Submit Payment</button>
+		<button id="clearBtn" type="reset">Clear</button>
+	  </form>
 	</div>
 
 	<!-- Add some scroll-space here -->

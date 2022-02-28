@@ -1,2 +1,9 @@
 @import "../index.css";
 @import "../week03/style.css";
+
+h1 { margin-top: 0; }
+input { margin-bottom: 4px; display: inline; }
+#payment { margin-top: 4px; }
+.invisible { display: none; }
+.important { color: orange; } /* Used by calculatePayment() for monthly payment output */
+ul, ol { justify-content: normal; display: block; }
