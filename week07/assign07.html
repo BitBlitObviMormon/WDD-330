@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- The Javascript file -->
-	<script src="script.js"></script>
+	<script src="script.js" defer></script>
   </head>
 
   <body>
@@ -20,7 +20,14 @@
 	
 	<!-- The body -->
 	<div class="tab">
-		
+	  <p>&bull; Interesting. <span class="pre">func_name.call()</span> seems like a curious way to introduce data polymorphism.</p><br>
+	  <p>&bull; So there <i>is</i> a way to store computational data in the cache! <span class="pre">func_name.cache()</span></p><br>
+	  <p>&bull; I guess if you get used to seeing IIFEs then it's not weird, but to a programmer like me, IIFEs look awful. I'd rather create a named function called <span class="pre">init()</span> and call it near the bottom of the script if I wanted to keep the namespace unpolluted. However, I do suppose that IIFEs in their own right keep the <span class="pre">init()</span> function from polluting the namespace.</p><br>
+	  <p id="change_me">&bull; Wait, <b>hold on!!</b> Rewritable functions sound like a crazy oversight. Programming would be a pain to debug if you could just click this button several times, calling the same function, but overriding the function to do different things!</p>
+	  <a id="change_button" class="button" href="Javascript:doThing();">click me</a><br><br>
+	  <div id="burger_joint"><p>&bull; Hey, want a <span class="highlight">burger</span>? I <b>PROMISE</b> you'll get one!</p></div>
+	  <a id="burger_button" class="button" href="Javascript:getBurger();">Order</a><br><br>
+	  <p>&bull; It's outright silly what you can do with CSS. In CS 213 we had a group work assignment where we were asked to submit the craziest CSS we could come up with. <a href="cs213_teach03.html">This</a> is an example of what you can do with that CSS assignment! (Stylesheets 2-4 were removed to protect other students' code.) If you click on "stylesheet 1" you'll notice that not only has the style changed, but the content of the document has as well (dirty CSS tricks). The CSS code can be seen <a href="jason_hendricks.css">here</a>.</p>
 	</div>
 
 	<!-- Add some scroll-space here -->

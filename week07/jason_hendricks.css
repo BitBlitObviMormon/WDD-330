@@ -1,0 +1,122 @@
+/* I must confess that I had a little much fun making this :D */
+/* Make the body text slightly bigger and set the background to an image */
+body {
+  font-size:18px;
+  color: white;
+  background-image: url("https://papers.co/wallpaper/papers.co-vq35-rainbow-dark-line-art-pattern-23-wallpaper.jpg");
+  background-color: black; /* Placeholder until the image finishes loading */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Make the links become buttons */
+a, *.menuBarItem {
+  /* Image properties */
+  display: inline-block;
+  background-image: url("https://openclipart.org/image/2400px/svg_to_png/212963/BlueSquareButton.png");
+  background-repeat: no-repeat;
+  background-size: 138px 40px;
+  padding: 10px 18px;
+
+  /* Text properties */
+  color: purple;
+  text-decoration: underline;
+  left: 0px;
+  height: 24px;
+  width: 111px;
+  text-align: center;
+}
+
+/* Change the button and cursor images when they're hovered over */
+a:hover, *.menuBarItem:hover {
+  cursor: pointer;
+  background-image: url("https://openclipart.org/image/2400px/svg_to_png/212965/GraySquareButton.png");
+}
+
+/* Use several shadow effects to make the text drip like blood */
+#title h1 {
+  color: red;
+  text-shadow:
+    4px  4px 1px #300000, 4px  6px 1px #400000, 4px  8px 1px #500000,
+    4px 11px 2px #600000, 4px 15px 2px #700000, 4px 20px 2px #800000,
+    4px 26px 3px #900000, 4px 33px 3px #a00000, 4px 41px 3px #b00000,
+    4px 50px 4px #c00000, 4px 60px 4px #d00000, 4px 71px 4px #e00000,
+    4px 83px 5px #f00000, 4px 96px 5px #ff0000;
+}
+
+/* Make "Grading" blue */
+h3 { color: #0055ff; }
+
+/* Use several shadow effects to make the text look like a waterfall */
+#text h1 {
+  color: #0055ff;
+  text-shadow:
+    4px  4px 1px #000003, 4px  6px 1px #001540, 4px  8px 1px #001a50,
+    4px 11px 2px #002060, 4px 15px 2px #002570, 4px 20px 2px #002a80,
+    4px 26px 3px #003090, 4px 33px 3px #0035a0, 4px 41px 3px #003ab0,
+    4px 50px 4px #0040c0, 4px 60px 4px #0045d0, 4px 71px 4px #004ae0,
+    4px 83px 5px #0050f0, 4px 96px 5px #0055ff;
+}
+
+/* Use CSS to hack the contents of the page */
+/* BEGIN HACK */
+
+/* Goodbye Content! */
+#title h1, #text p, #sidebar, #bottom, *.menuBarItem  { visibility: hidden; }
+
+/* Hello new title */
+#title h1:after {
+  content: 'H̸̛̛̛͙̱̼̖͔̞͕̥̖̓̅͒̈́̑̉̅̐́̆͜͝ͅͅA̴̢̛̞̞̣̝͓̲̱̖̗͔̔̏̓̌͋́̂̃͛̂̿̋̿͝C̷̻͈̣͎͔̘̰͈̾̐́̈́̈͒̀̇̋͊̊́̆̽̕K̵̜̜͓̤̻͉̝̻͓͎̘̒̑̊̽̍͌͑̊̐̔̋̚͠E̷͈̘͙̩͒̉́͒̃͘͘D̴̢̰̰̩̻̫͍̱̂͌͝͠';
+  visibility: visible;
+  position: absolute;
+  display: block;
+  top: 12px;
+}
+
+/* Hello new stylesheet selection paragraph */
+#text p:first-of-type:after {
+  content: 'There is only one stylesheet that you may use now. Use it wisely...';
+  visibility: visible;
+  position: absolute;
+  display: block;
+  top: 272px;
+}
+
+/* Hello again lovely stylesheet button */
+#text p a:first-of-type { visibility: visible; }
+*.menuBarItem:first-of-type { visibility: visible; }
+
+/* Hello new instructions */
+#text p:nth-of-type(2):after {
+  content: 'Instructors shall give the student an \"A\" while the rest are to wait for IT to arrive.';
+  visibility: visible;
+  color: black;
+  background-color: lemonchiffon;
+  padding: 4px 8px 4px 8px;
+  position: absolute;
+  display: block;
+  top: 446px;
+}
+
+/* Hello new bottom! */
+#bottom:after {
+  content: 'I had way too much fun making this! 🤣';
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: visible;
+  position: absolute;
+  display: block;
+  top: 540px;
+}
+
+/* Hello new sidebar (or signature I should say) */
+#sidebar:after {
+  content: '- Jason Hendricks';
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: visible;
+  position: absolute;
+  display: block;
+  top: 570px;
+  left: 16px;
+}
+
+/* HACK FINISH */

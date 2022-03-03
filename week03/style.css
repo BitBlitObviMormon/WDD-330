@@ -32,6 +32,9 @@ div.tab {
 	cursor: pointer;
 }
 
+a.button:link { color: black; }
+a.button:hover { color: white; }
+
 .pre {
     display: inline;
     unicode-bidi: embed;
