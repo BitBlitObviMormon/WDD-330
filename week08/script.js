@@ -1,0 +1,1 @@
+/* Wanted to do some authentication key generation, but I'm unsure how to do it with clientside Javascript */
